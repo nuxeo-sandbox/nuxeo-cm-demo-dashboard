@@ -1,0 +1,32 @@
+{
+  "name": "nuxeo-cm-demo-dashboard",
+  "version": "0.0.1",
+  "private": true,
+  "authors": [
+    "Nelson Silva <nsilva@nuxeo.com>"
+  ],
+  "description": "A dashboard element for the Nuxeo Case Management Demo.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "nuxeo",
+    "case-management",
+    "dashboard"
+  ],
+  "license": "LGPL",
+  "homepage": "https://github.com/nuxeo/nuxeo-cm-demo-dashboard/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "google-chart": "GoogleWebComponents/google-chart#^1.0.0",
+    "nuxeo-dataviz-elements": "nuxeo/nuxeo-dataviz-elements#nuxeo-repository-data",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.0",
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "moment": "2.10.6"
+  }
+}
