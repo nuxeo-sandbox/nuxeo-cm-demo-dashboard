@@ -46,7 +46,7 @@ Example:
                            data="{{incidentKinds}}">
     </nuxeo-repository-data>
 
-    <paper-card heading="Incident kinds" elevation="2">
+    <paper-card heading="Incident Types" elevation="2">
       <div class="card-content">
         <google-chart type="pie"
                       cols='[{"label": "Kind", "type": "string"},{"label": "Value", "type": "number"}]'
@@ -63,7 +63,7 @@ Example:
                            data="{{incidentsPerTypology}}">
     </nuxeo-repository-data>
 
-    <paper-card heading="Incidents per typology" elevation="2">
+    <paper-card heading="Incidents per Scenario" elevation="2">
       <div class="card-content">
         <google-chart type='treemap'
                       options='{"maxPostDepth":2}'
@@ -79,7 +79,7 @@ Example:
                            data="{{kindPerState}}">
     </nuxeo-repository-data>
 
-    <paper-card heading="Incidents per state" elevation="2">
+    <paper-card heading="Incidents per State" elevation="2">
       <div class="card-content">
         <google-chart type='geo' options='{"region":"US", "resolution": "provinces"}'
                       cols='[{"label": "Kind", "type": "string"},{"label": "Value", "type": "number"}]'
@@ -96,7 +96,7 @@ Example:
                            data="{{amountPerTypology}}">
     </nuxeo-repository-data>
 
-    <paper-card heading="Repaid amount per disaster typology" elevation="2">
+    <paper-card heading="Repaid Amount per Incident Scenario" elevation="2">
       <div class="card-content">
         <google-chart type='treemap'
                       options='{"maxPostDepth":2}'
