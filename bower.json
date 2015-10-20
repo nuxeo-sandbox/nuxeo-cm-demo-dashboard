@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "google-chart": "GoogleWebComponents/google-chart#^1.0.0",
-    "nuxeo-dataviz-elements": "nuxeo/nuxeo-dataviz-elements#nuxeo-repository-data",
+    "nuxeo-dataviz-elements": "nuxeo/nuxeo-dataviz-elements#0a435987289b6ab489169c5eba23771ccf5b8d35",
     "paper-elements": "PolymerElements/paper-elements#^1.0.0",
     "polymer": "Polymer/polymer#^1.0.0"
   },
