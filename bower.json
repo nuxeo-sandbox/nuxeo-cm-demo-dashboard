@@ -23,10 +23,14 @@
     "google-chart": "GoogleWebComponents/google-chart#^1.0.0",
     "nuxeo-dataviz-elements": "nuxeo/nuxeo-dataviz-elements#0a435987289b6ab489169c5eba23771ccf5b8d35",
     "paper-elements": "PolymerElements/paper-elements#^1.0.0",
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "nuxeo-elements": "nuxeo/nuxeo-elements#0.1.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "moment": "2.10.6"
+  },
+  "resolutions": {
+    "nuxeo-elements": "0.1.0"
   }
 }
