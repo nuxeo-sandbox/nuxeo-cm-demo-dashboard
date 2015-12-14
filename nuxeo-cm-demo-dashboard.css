@@ -37,3 +37,9 @@ paper-card {
         width: 100%;
     }
 }
+
+.center-chart {
+  height: 100%;
+  margin: 25px auto 0 auto;
+  display: block;
+}
