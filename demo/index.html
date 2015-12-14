@@ -10,33 +10,32 @@
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
   <script src="../../moment/min/moment-with-locales.js"></script>
 
-  <link rel="import" href="../../nuxeo-elements/nx-connection.html">
+  <link rel="import" href="../../nuxeo-elements/nuxeo-connection.html">
   <link rel="import" href="../../paper-header-panel/paper-header-panel.html">
   <link rel="import" href="../../paper-toolbar/paper-toolbar.html">
 
   <link rel="import" href="../nuxeo-cm-demo-dashboard.html">
 
   <style is="custom-style">
-
     body {
       background: #fafafa;
       font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #444;
     }
-
+    
     #logo {
-      background:transparent url('https://sso.nuxeo.com/cas/images/logo_connect_white.png') no-repeat;
+      background: transparent url('https://sso.nuxeo.com/cas/images/logo_connect_white.png') no-repeat;
       background-size: cover;
       display: inline-block;
-      height:28px;
-      width:160px;
-      margin-left: 20px;;
+      height: 28px;
+      width: 160px;
+      margin-left: 20px;
+      ;
     }
-
+    
     paper-toolbar {
       --paper-toolbar-background: #ccc;
     }
-
   </style>
 
 </head>
@@ -44,7 +43,7 @@
 <body unresolved class="fullbleed">
   <template is="dom-bind" id="app">
 
-    <nx-connection url="http://localhost:8080/nuxeo" username="Administrator" password="Administrator"></nx-connection>
+    <nuxeo-connection url="http://localhost:8080/nuxeo" username="Administrator" password="Administrator"></nuxeo-connection>
 
     <paper-header-panel>
       <paper-toolbar>
@@ -61,11 +60,14 @@
 
   </template>
 
+  <script>
+    var t = document.querySelector('template');
+    var currentDate = moment();
+    t.endDate = currentDate.format("YYYY-MM-DD");
+    t.startDate = currentDate.subtract(6, 'months').format("YYYY-MM-DD");
+  </script>
+
 </body>
-<script>
-  var t = document.querySelector('template');
-  var currentDate = moment();
-  t.endDate = currentDate.format("YYYY-MM-DD");
-  t.startDate = currentDate.subtract(6, 'months').format("YYYY-MM-DD");
-</script>
+
+
 </html>
